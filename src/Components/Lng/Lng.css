@@ -1,0 +1,69 @@
+.Lng {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 170px;
+}
+
+.lng-container {
+    padding: 50px;
+    border: 3px solid #0000;
+    border-radius: 12px;
+   background: 
+        linear-gradient(#131219, #131219) padding-box, 
+        linear-gradient(var(--angle), #DF8908, #B415FF) border-box;
+    animation: rotate 6s linear infinite;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 80px;
+}
+
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.title {
+    position: relative;
+}
+
+.title h1 {
+    padding: 0px 30px;
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.title img {
+    position: absolute;
+    padding: 0 20px;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    padding: 3px;
+    border-radius: 500px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.element:hover {
+    filter: drop-shadow(30px 10px 4px #4444dd);
+    transform: scale(1.05);
+    transition: 0.4s;
+}

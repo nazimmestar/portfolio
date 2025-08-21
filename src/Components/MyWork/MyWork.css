@@ -1,0 +1,167 @@
+.mywork {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    gap: 80px;
+}
+
+.mywork-title {
+    position: relative;
+}
+
+.mywork-title h1 {
+    padding: 0px 30px;
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.mywork-title img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+
+.mywork-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px;
+    border: 3px solid #781a1a00;
+    border-radius: 12px;
+    background:
+        linear-gradient(#131219, #131219) padding-box,
+        linear-gradient(var(--angle), #DF8908, #B415FF) border-box;
+    animation: rotate 6s linear infinite;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    gap: 10px;
+    row-gap: 10px;
+}
+
+@keyframes rotate {
+    to {
+        --angle: 360deg;
+    }
+}
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+
+.mywork-container div:last-child {
+    grid-column: 1;
+}
+
+.mywork-container img {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    transform: 0.3s;
+    cursor: pointer;
+}
+
+
+
+.card {
+    position: relative;
+    overflow: hidden;
+}
+
+.card-data {
+    height: 170px;
+    width: 300px;
+    padding: 10px 10px;
+    margin: -15px;
+    background: #4a4a4a;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    position: absolute;
+    bottom: -11rem;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    opacity: 0;
+    transition: opacity 1s 1s;
+}
+
+.card:nth-child(1) .card-data {
+    height: 130px;
+    width: 330px;
+    margin-bottom: 18px;
+}
+
+.card:nth-child(2) .card-data {
+    height: 140px;
+    margin-bottom: 15px;
+}
+
+.card:nth-child(3) .card-data {
+    height: 90px;
+    margin-bottom: 50px;
+}
+
+.card:nth-child(4) .card-data {
+    height: 90px;
+    margin-bottom: 50px;
+}
+
+.card-data p {
+    font-size: small;
+    margin-bottom: .25rem;
+}
+
+
+/* animmation */
+
+.card:hover .card-data {
+    animation: show-data 1s forwards;
+    opacity: 1;
+    transition: opacity .3s;
+
+}
+
+.card:hover {
+    animation: remove-overflow 2s forwards;
+    z-index: 1;
+}
+
+@keyframes show-data {
+    50% {
+        transform: translateY(-10rem);
+    }
+
+    100% {
+        transform: translateY(-7rem);
+    }
+}
+
+@keyframes remove-overflow {
+    to {
+        overflow: initial;
+    }
+}
+
+
+
+.href a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.href a:hover {
+    transform: scale(1.05);
+}
