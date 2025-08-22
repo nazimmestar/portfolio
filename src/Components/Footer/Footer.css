@@ -1,0 +1,19 @@
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    color: #D8D8D8;
+   
+}
+
+.footer-left{
+    display: flex;
+    gap: 10px;
+    margin: 20px;
+}
+
+.footer-left img{
+    width: 30px;
+    height: 30px;
+}
+

@@ -6,7 +6,7 @@ import theme_pattern from '../../assets/theme_pattern.svg'
 
 const Lng = () => {
     return (
-        <div className='Lng'>
+        <div id='tech' className='Lng'>
             <div className="title">
                 <h1>Technologies</h1>
                 <img src={theme_pattern} alt="" />

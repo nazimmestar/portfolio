@@ -14,7 +14,7 @@ const mywork_data = [
         w_name:"OLAP Desktop Application",
         w_des:"Built a local OLAP-like desktop app for relational data analysis, with features for querying, aggregation, and visualization to support decision-making.",
         w_img:project2_img,
-        href:'<a href="https://github.com/nazimmestar/pfe-vm-migration-optimization.git" target="_blank">Check it</a>'
+        href:'<a href="https://github.com/nazimmestar/OLAP.git" target="_blank">Check it</a>'
     },
     {
         w_name:" Medical Clinic Desktop App",

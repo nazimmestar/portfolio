@@ -1,17 +1,18 @@
-import java from '../assets/java.svg'
+import java from '../assets/java1.svg'
 import html from '../assets/html.svg'
 import ai from '../assets/ai.svg'
 import css from '../assets/css.svg'
-import expressjs from '../assets/expressjs.svg'
+import expressjs from '../assets/expressjs1.svg'
 import git from '../assets/git.svg'
 import javascript from '../assets/javascript.svg'
 import mysql from '../assets/mysql.svg'
-import node from '../assets/node.svg'
+import node from '../assets/node1.svg'
 import oracle from '../assets/oracle.svg'
 import python from '../assets/python.svg'
 import reactjs from '../assets/reactjs.svg'
 import figma from '../assets/figma.svg'
 import npm from '../assets/npm.svg'
+import bts from '../assets/bootstrap.svg'
 
 
 
@@ -42,6 +43,11 @@ const Lng = [
     {
         name: "React",
         img: reactjs
+    },
+
+      {
+        name: "bts",
+        img: bts
     },
     {
         name: "Npm",
