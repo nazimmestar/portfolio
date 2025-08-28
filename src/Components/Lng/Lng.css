@@ -1,99 +1,145 @@
 .Lng {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 80px;
-    margin: 80px 170px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  margin: 80px 170px;
 }
 
 .lng-container {
-    padding: 50px;
-    border: 3px solid #0000;
-    border-radius: 12px;
-    background:
-        linear-gradient(#131219, #131219) padding-box,
-        linear-gradient(var(--angle), #DF8908, #B415FF) border-box;
-    animation: rotate 6s linear infinite;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 40px;
-    margin-bottom: 80px;
+  padding: 50px;
+  border: 3px solid #0000;
+  border-radius: 12px;
+  background:
+    linear-gradient(#131219, #131219) padding-box,
+    linear-gradient(var(--angle), #DF8908, #B415FF) border-box;
+  animation: rotate 6s linear infinite;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 40px;
+  margin-bottom: 80px;
+  justify-items: center;
+  align-items: center;
 }
 
 @keyframes rotate {
-    to {
-        --angle: 360deg;
-    }
+  to {
+    --angle: 360deg;
+  }
 }
 
 @property --angle {
-    syntax: "<angle>";
-    initial-value: 0deg;
-    inherits: false;
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
 }
 
 .title {
-    position: relative;
+  position: relative;
 }
 
 .title h1 {
-    padding: 0px 30px;
-    font-size: 80px;
-    font-weight: 600;
+  padding: 0px 30px;
+  font-size: 80px;
+  font-weight: 600;
+  text-align: center;
 }
 
 .title img {
-    position: absolute;
-    padding: 0 20px;
-    bottom: 0;
-    right: 0;
-    z-index: -1;
+  position: absolute;
+  padding: 0 20px;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
 }
 
 .element {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 50px;
-    padding: 3px;
-    border-radius: 500px;
-    transition: 0.4s;
-    cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+  border-radius: 500px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.element img {
+  max-width: 80px;
+  max-height: 80px;
 }
 
 .element:hover {
-    filter: drop-shadow(30px 10px 4px #4444dd);
-    transform: scale(1.05);
-    transition: 0.4s;
+  filter: drop-shadow(30px 10px 4px #4444dd);
+  transform: scale(1.05);
+  transition: 0.4s;
 }
 
-@media(max-width:768px) {
-    .Lng {
-        align-items: start;
-        gap: 70px;
-        margin: 100px 70px;
-    }
+/* ================ TABLET (≤1024px) ================= */
+@media (max-width: 1024px) {
+  .Lng {
+    margin: 60px 80px;
+    gap: 60px;
+  }
 
-    .Lng h1 {
-        padding: 0;
-        font-size: 50px;
-    }
+  .title h1 {
+    font-size: 60px;
+    padding: 0;
+  }
 
-    .title img {
-        width: 130px;
-        margin-right: -30px;
-    }
+  .lng-container {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 30px;
+  }
 
- .lng-container {
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr ;
-    padding: 10px; 
-    border-radius: 30px;
-        margin-right: -10px;
-
-    justify-items: center; 
-    align-items: center;    
+  .element img {
+    max-width: 70px;
+    max-height: 70px;
+  }
 }
 
+/* ================ MOBILE (≤768px) ================= */
+@media (max-width: 768px) {
+  .Lng {
+    align-items: flex-start;
+    gap: 50px;
+    margin: 50px 30px;
+  }
+
+  .title h1 {
+    font-size: 42px;
+    text-align: left;
+  }
+
+  .title img {
+    width: 100px;
+    right: -15px;
+  }
+
+  .lng-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 15px;
+    border-radius: 20px;
+  }
+
+  .element img {
+    max-width: 50px;
+    max-height: 50px;
+  }
+}
+
+/* ================ VERY SMALL SCREENS (≤480px) ================= */
+@media (max-width: 480px) {
+  .lng-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .element img {
+    max-width: 40px;
+    max-height: 40px;
+  }
 }

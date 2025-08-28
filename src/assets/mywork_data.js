@@ -1,5 +1,5 @@
 import project1_img from '../assets/cloud.jpg'
-import project2_img from '../assets/olap.png'
+import project2_img from '../assets/olap.jpg'
 import project3_img from '../assets/med.png'
 import project5_img from '../assets/design1.jpg'
 
