@@ -144,6 +144,12 @@
         font-size: 32px;
     }
 
+    .services-title img {
+        width: 100px;
+        margin-right: -30px;
+        margin-bottom: 2px;
+    }
+
     .services-container {
         gap: 20px;
     }

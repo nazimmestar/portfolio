@@ -143,8 +143,13 @@
     font-size: 32px;
   }
 
+  .title img{
+    width: 110px;
+    right: -30px;
+  }
+
   .lng-container {
-    grid-template-columns: repeat(3, 1fr); /* <-- now 3 items per row */
+    grid-template-columns: repeat(4, 1fr); /* <-- now 3 items per row */
     gap: 15px;
     padding: 10px;
     border-radius: 15px;

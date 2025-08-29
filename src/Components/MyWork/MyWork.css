@@ -199,6 +199,12 @@
         font-size: 32px;
     }
 
+    .mywork-title img{
+        width: 99px;
+        right: +37px;
+        margin-bottom: 2px;
+    }
+
     .mywork-container img {
         width: 100%;
         height: auto;
