@@ -20,12 +20,12 @@ const mywork_data = [
         w_name:" Medical Clinic Desktop App",
         w_des:"Developed a client/server desktop system for managing patients and appointments, with a user-friendly GUI for doctors and staff.",
         w_img:project3_img,
-        href:''
+        href:'<a href="https://github.com/nazimmestar/medical-clinic-desktop-app.git" target="_blank">Check it</a>'
     },
    
     {
         w_name:"Graphic Design",
-        w_des:"My Portfolio behacnce",
+        w_des:"Welcome to my showcase of modern, creative design work, reflecting my passion for innovation and aesthetics on Behance.",
         w_img:project5_img,
         href:'<a href="https://www.behance.net/ce676344" target="_blank">Check it</a>'
     },

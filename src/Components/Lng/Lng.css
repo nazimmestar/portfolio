@@ -133,9 +133,21 @@
 
 /* ================ VERY SMALL SCREENS (≤480px) ================= */
 @media (max-width: 480px) {
+  .Lng {
+    align-items: flex-start;
+    gap: 40px;
+    margin: 30px 15px;
+  }
+
+  .title h1 {
+    font-size: 32px;
+  }
+
   .lng-container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr); /* <-- now 3 items per row */
     gap: 15px;
+    padding: 10px;
+    border-radius: 15px;
   }
 
   .element img {
