@@ -141,6 +141,8 @@
 
   .title h1 {
     font-size: 32px;
+    margin-left: 20px;
+
   }
 
   .title img{
@@ -152,6 +154,7 @@
     grid-template-columns: repeat(4, 1fr); /* <-- now 3 items per row */
     gap: 15px;
     padding: 10px;
+    margin-left: 8px;
     border-radius: 15px;
   }
 
