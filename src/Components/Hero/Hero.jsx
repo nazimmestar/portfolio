@@ -17,7 +17,7 @@ const Hero = () => {
             1000,
             "Backend Developer",
             1000,
-            "Software Engineering",
+            "Software Engineer",
             1000,
           ]}
           speed={50}
